@@ -18,7 +18,7 @@
 // Reference Type ==>> Non- Primitive
 //Arrays,Objects,Functions
 // let testArray = ['Usman','karim',1234];  >> Array
-// console.log(testArray)
+// console.log(testArray) >> type = array
 
 // let user = {
 //     'name':'Osman',       >> Object
@@ -30,10 +30,17 @@
 //     {
 //         'name':'Osman',      
 //     age : 36
-//     },                             >> object of array
+//     },                             //>> object of array
 //     {
 //         'name':'Osman',       
 //    age : 36
 //     }
 // ]
-// console.log(user1)
+// console.log(typeof(user1)) >> type = object
+
+// const myFunc = function(){
+//     console.log('Hello World')      //>> function
+// }
+// myFunc()
+// console.log(typeof(myFunc)) >> type = function 
+
