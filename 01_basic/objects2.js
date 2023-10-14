@@ -9,7 +9,7 @@
 // //How to concat objects
 // const user = {1:'usman',2:'Karim'}
 // const user1 = {3:'imran',4:'Karim'}
-// // const user3 = {...user,...user1}
+// // const user3 = {...user,...user1}   << spread method
 // // console.log(user3)
 
 // console.log(Object.keys(user1))
