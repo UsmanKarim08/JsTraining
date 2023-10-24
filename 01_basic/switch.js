@@ -1,16 +1,16 @@
-const month = 3
-switch(month){
-    case 1 :
-        console.log('jan')
+const user = 'usman'
+switch(user){
+    case 'imran' :
+        console.log(`${user} is your name `)
         break;
-    case 2 :
-        console.log('feb')
+    case 'zohaib' :
+        console.log(`${user} is your name `)
         break;
-    case  3:
-        console.log('march')
+    case  'aleem':
+        console.log(`${user} is your name `)
         break;
-    case 4 :
-        console.log('april')
+    case 'usman' :
+        console.log(`${user} is your name `)
         break;
         default:
             console.log('testing')
