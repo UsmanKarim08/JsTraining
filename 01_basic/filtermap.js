@@ -17,6 +17,6 @@ const books = [
     { title: 'Book Eight', genre: 'Science', publish: 2011, edition: 2016 },
     { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
   ];
-  const fic = books.filter((bk) => bk.publish > 2000)
+  let fic = books.filter((bk) => {return bk.publish >= 1995 && bk.genre === 'History'})
   console.log(fic)
   
