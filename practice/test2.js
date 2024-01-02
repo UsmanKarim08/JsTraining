@@ -23,7 +23,7 @@ const books = [
   // let fic =books.filter((book) => {return book.genre && book.publish})
   //   console.log(fic)
     books.forEach((book) => {
-      if(book.genre == 'Fiction' && book.publish < 1990){
+      if(book.genre == 'Science' && book.publish > 1990){
         console.log(book.title)
       }
       // console.log(book.publish);
