@@ -7,4 +7,4 @@ age= '28'
 email = 'usman@google.com'
 city ='jersey'
  console.table([age,email,city])
-//  prefernoto to use ver because of block scope and functional scope
+//  prefer no to to use var because of block scope and functional scope
