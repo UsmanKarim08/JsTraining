@@ -14,5 +14,6 @@ if(url.startsWith('https')){
 }else{
     console.log('Unsecure')
 }
+
                                                     //>> how to replace
 // console.log(url.startsWith('https')) //>> to check if the string starts with https;
