@@ -24,4 +24,14 @@ function loginUser(user){
     return `${user} is logged in`
 
 }
-console.log(loginUser('usman'))
+// console.log(loginUser('usman'))
+function add(...num){    //<<< this called rest operator 
+return num
+}
+console.log(add(20,25,30,35))
+
+const myArr = ['usman', 28,52]
+function getArr(arr){
+    return arr[0]
+}
+console.log(getArr(myArr))
