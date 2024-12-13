@@ -1,0 +1,36 @@
+different types of loops that can be used for arrays, array-like objects, and maps in JavaScript:
+
+For loops
+let arr = [1, 2, 3, 4, 5];
+for (const element of arr) {
+    console.log(element);
+}
+let arrayLike = {0: 'a', 1: 'b', 2: 'c', length: 3};
+for (let i = 0; i < arrayLike.length; i++) {
+    console.log(arrayLike[i]);
+}
+For Of loops
+let arr = [1, 2, 3, 4, 5];
+for (const element of arr) {
+    console.log(element);
+}
+for Each
+let arr = [1, 2, 3, 4, 5];
+arr.forEach(element => {
+    console.log(element);
+});
+
+objects
+const person = {firstName: "John", lastName: "Doe", age: 30};
+for (const [key, value] of Object.entries(person)) {
+    console.log(`${key}: ${value}`);
+}
+maps
+const map = new Map([['a', 1], ['b', 2], ['c', 3]]);
+for (const [key, value] of map) {
+    console.log(`${key}: ${value}`);
+}
+const map = new Map([['a', 1], ['b', 2], ['c', 3]]);
+map.forEach((value, key) => {
+    console.log(`${key}: ${value}`);
+});
