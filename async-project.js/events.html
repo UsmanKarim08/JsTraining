@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Learning Async</h1>
+    <button id="cancel">Cancel</button>
+</body>
+<script>
+    // // setTimeout(() => {
+    // //     console.log("usman")
+    // // }, 2000);
+    // setInterval(() => {
+    //     console.log("usman")
+    // }, 2000);
+    const myName = () =>{
+        console.log("usman")
+    }
+    const changeText = () => {
+        document.querySelector('h1').innerHTML='Karim'
+        alert('Success')
+    }
+    const stop = setTimeout(changeText,2000)
+    document.querySelector('#cancel').addEventListener(click, function(){
+        clearTimeout(stop)
+    })
+</script>
+</html>

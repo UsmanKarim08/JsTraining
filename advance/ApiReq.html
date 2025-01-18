@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Request</title>
+    <style>
+        .card {
+            border: 1px solid #ccc;
+            padding: 16px;
+            margin: 16px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="pic">Pic</button>
+    <div id="card" class="card"></div>
+
+    <script>
+        document.getElementById('pic').addEventListener('click', () => {
+            let reqURL = 'https://api.github.com/users/hiteshchoudhary';
+            let xhr = new XMLHttpRequest();
+            xhr.open('GET', reqURL);
+            xhr.onreadystatechange = () => {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    let user = JSON.parse(xhr.responseText);
+                    document.getElementById('card').innerHTML = `
+                        <img src="${user.avatar_url}" alt="Avatar" width="100">
+                    `;
+                    document.getElementById('card').style.display = 'block';
+                }
+            };
+            xhr.send();
+        });
+    </script>
+</body>
+</html>

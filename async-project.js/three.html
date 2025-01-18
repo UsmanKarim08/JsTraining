@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interval Example</title>
+</head>
+<body>
+    <h1>Learning Async</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    
+    <script>
+        const task = function(str){
+            console.log(str, Date.now());
+        }
+
+        let intervalId;
+
+        const star = () => {
+            intervalId = setInterval(() => task('hello'), 1000);
+        }
+
+        const stp = () => clearInterval(intervalId);
+
+        document.querySelector('#start').addEventListener('click', function(){
+            star();
+        });
+
+        document.querySelector('#stop').addEventListener('click', function(){
+            stp();
+        });
+    </script>
+</body>
+</html>

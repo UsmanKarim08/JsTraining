@@ -1,6 +1,6 @@
 // push array
 let marvel = ['spriderman','batman','superman']
-let cricket = ['England', 'Pakistan', 'Australia']
+let cricket = ['England', 'Pakistan', 'Australia','Africa']
 let countries = ['India', 'Africa']
 // marvel.push(cricket)
 // console.log(marvel)
@@ -11,8 +11,9 @@ let countries = ['India', 'Africa']
 
 //Spreading the array work like same as concat
 
-// let allThings = [...cricket,...marvel,...countries]
-// console.log(allThings)
+let allThings = [...cricket,...marvel,...countries]
+let dup = [...new Set (allThings)]
+ console.log(dup)
 
 //How to convert to array
 console.log(Array.from('Usman'))
@@ -20,3 +21,4 @@ let num = 12;
 let num2 = 15;
 let num3 = 17
 console.log(Array.of(num,num2,num3))
+console.log(Array.from({name:'usman'}))
